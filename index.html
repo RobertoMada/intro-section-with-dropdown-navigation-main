@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="primary-header flex">
+    <div class="logo">
+      <img src="images/logo.svg" alt="snap logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+    <nav id="primary-navigation" data-visible="false" class="primary-navigation flex fs-600">
+      <ul class="flex">
+        <li role="navigation" aria-controls="features-list" aria-expanded="false" class="p-relative">
+          Features
+          <img src="images/icon-arrow-down.svg" alt="">
+          <ul id="features-list" data-visible="false" class="secondary-navigation flow">
+            <li><a href="#">
+              <img src="images/icon-todo.svg" alt="">
+              Todo List
+            </a></li>
+            <li><a href="#">
+              <img src="images/icon-calendar.svg" alt="">
+              Calendar
+            </a></li>
+            <li><a href="#">
+              <img src="images/icon-reminders.svg" alt="">
+              Reminders
+            </a></li>
+            <li><a href="#">
+              <img src="images/icon-planning.svg" alt="">
+              Planning
+            </a></li>
+          </ul>
+        </li>
+        <li role="navigation" aria-controls="company-list" aria-expanded="false" class="p-relative">
+          Company
+          <img src="images/icon-arrow-down.svg" alt="">
+          <ul id="company-list" data-visible="false" class="secondary-navigation flow">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div>
+        <button class="login-btn bg-white fs-500 text-grey">Login</button>
+        <button class="register-btn bg-white fs-500 text-grey">Register</button>
+      </div>
+    </nav>
+  </header>
+  
+  <main class="grid container">
+    <div class="content flow">
+      <h1 class="text-dark fs-800 fw-bold">Make remote work</h1>
+      <p>Get your team in sync, no matter your location Streamline processes, create team rituals, and watch productivity soar.</p>
+      <button class="btn bg-dark text-white fw-bold">Learn more</button>
+      <div class="flex comercials">
+        <img src="images/client-databiz.svg" alt="">
+        <img src="images/client-audiophile.svg" alt="">
+        <img src="images/client-meet.svg" alt="">
+        <img src="images/client-maker.svg" alt="">
+      </div>
+    </div>
+    <div class="pic">
+      <picture>
+        <source media="(min-width: 766px)" srcset="images/image-hero-desktop.png">
+        <img src="images/image-hero-mobile.png" alt="">
+      </picture>
+    </div>
+  </main>
+  
+  
+
+  
+
+  
+
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="script.js"></script>
+</body>
+</html>
